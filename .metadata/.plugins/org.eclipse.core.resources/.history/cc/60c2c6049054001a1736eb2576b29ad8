@@ -1,0 +1,10 @@
+package jdbcprograms;
+
+public class Employee {
+	String empid;
+	String ename;
+	String dept;
+	String desg;
+	String email;
+
+}

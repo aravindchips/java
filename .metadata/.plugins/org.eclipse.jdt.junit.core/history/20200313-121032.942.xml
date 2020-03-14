@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestCategories" project="Junittt" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="categories.TestCategories" time="0.0" uniqueid="[engine:junit-vintage]/[runner:categories.TestCategories]">
+    <testsuite name="categories.TestCategory1" time="0.0" uniqueid="[engine:junit-vintage]/[runner:categories.TestCategories]/[test:categories.TestCategory1]">
+      <testcase name="test1" classname="categories.TestCategory1" time="0.0" displayname="test1" uniqueid="[engine:junit-vintage]/[runner:categories.TestCategories]/[test:categories.TestCategory1]/[test:test1(categories.TestCategory1)]"/>
+    </testsuite>
+  </testsuite>
+</testrun>

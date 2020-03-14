@@ -1,0 +1,27 @@
+package sumofdigits;
+
+public class ExceptTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=10,b=0,c;
+		try {
+	
+		String str = "Hello";
+		System.out.println(str.charAt(6));
+		c=a/b;
+		System.out.println(c);
+		}
+		catch(ArithmeticException e) {
+			System.out.println("Inside the arthimetic exception.....");
+		}
+		catch(StringIndexOutOfBoundsException e) {
+			System.out.println("Inside the string index out of bounds exception.....");
+		}
+		finally {
+		System.out.println("Inside the finally statement....");	
+		}
+		System.out.println("After the finally block....");
+	}
+
+}

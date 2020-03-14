@@ -1,0 +1,14 @@
+package relations;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cart cart=new Cart();
+		cart.setName("MyCart");
+		Items item1=new Items("I1",10,1,cart);
+		Items item2=new Items("I2",20,2,cart);
+
+	}
+
+}

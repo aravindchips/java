@@ -1,0 +1,18 @@
+package test;
+
+public class Employee {
+	Integer id;
+	String designation;
+	Integer salary;
+	public Employee(Integer id,String designation,Integer salary) {
+		this.id=id;
+		this.designation=designation;
+		this.salary=salary;
+		
+	}
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", designation=" + designation + ", salary=" + salary + "]";
+	}
+
+}

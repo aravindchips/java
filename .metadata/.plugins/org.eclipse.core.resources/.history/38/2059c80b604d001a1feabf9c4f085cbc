@@ -1,0 +1,12 @@
+package test;
+import java.util.*;
+import java.util.HashMap;
+public class HashMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<Integer,Employee> hm=new HashMap<Integer,Employee>();
+
+	}
+
+}

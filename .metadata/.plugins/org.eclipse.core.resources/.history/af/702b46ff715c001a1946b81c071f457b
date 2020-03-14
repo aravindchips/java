@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+<ul>
+<li><a href="DisplayServlet">DisplayEmployee</a></li>
+<a href="DeleteServlet">DeleteEmployee</a></li>
+<a href="SearchServlet">SearchEmployee</a></li>
+<a href="UpdateServlet">UpdateEmployee</a></li>
+<a href="addemployee.html">InsertEmployee</a></li>
+</ul>
+</form>
+</body>
+</html>

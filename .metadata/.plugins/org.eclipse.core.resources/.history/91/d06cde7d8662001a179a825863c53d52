@@ -1,0 +1,22 @@
+package testbean;
+
+abstract class Details1 {
+	void time() {
+		System.out.println("Fun time");
+	}
+}	
+class Details extends Details1{
+public static void main(String args[]) {
+	try {
+		System.out.println("Hello");
+		throwit();
+	}catch(Exception re) {
+		System.out.println("Caught");
+	}
+	finally {
+		System.out.println("Finally");
+	}
+	System.out.println("After");
+}
+
+}

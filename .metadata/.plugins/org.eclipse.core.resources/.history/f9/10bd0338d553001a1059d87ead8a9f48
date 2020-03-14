@@ -1,0 +1,6 @@
+package noxmlfile;
+@Configuration
+public class ConfigFile {
+	
+
+}

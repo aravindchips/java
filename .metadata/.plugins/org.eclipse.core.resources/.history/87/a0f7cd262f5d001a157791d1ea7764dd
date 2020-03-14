@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>College Training Feedback Form</title>
+</head>
+<style>
+body{background-color:#ffaacc}
+h1{font:Courier New;font-style:italic;text-align:center;text-color:#770080}
+#robo{clear:left;
+float:right;}
+</style>
+<body>
+<h1>College Training Feedback Form</h1>
+<div class="robo">
+<form>
+<table>
+<tr><td><label>Participant Name</label>  </td><td><input type="text" name="participantName" required><br></td></tr>
+<tr><td><label>College Name</label></td><td> <input type="text" name="collegeName" required><br></td></tr>
+<tr><td><label>Participant Address</label> </td><td> <textarea name="participantAddress" rows="5" columns="20" required></textarea><br></td></tr>
+<tr><td><label>Gender</label>  </td>
+<td><form>
+<input type="radio" name="gender" required><label>Male</label>
+<input type="radio" name="gender"><label>Female</label>
+</form><br></td></tr>
+<tr><td><label>Email ID</label></td><td> <input type="email" name="email" required><br></td></tr>
+<tr><td><label>Mobile Number</label></td><td> <input type="tel" name="mobileNumber" required><br></td></tr>
+<tr><td><label>Trainer'sName</label> </td><td><input type="text" name="trainerName" required><br></td></tr>
+
+<tr><td><label>Course Name</label></td><td> <input type="text" name="courseName" required><br></td></tr>
+<tr><td><label>Course Completion date</label></td><td> <input type="date" name="dateofcompletion" required><br></td></tr>
+<tr><td><label>Trainer'sFeedback</label></td>
+<td><form>
+<input list="feedback">
+  <datalist id="feedback" required>
+    <option value="Excellent">
+    <option value="Very Good">
+    <option value="Good">
+    <option value="Average">
+    <option value="Below Average">
+  </datalist>
+<br></td></tr></form>
+<tr><td><input type="submit" value="Submit Feedback" name="submit"></td>
+<td><input type="reset" value="clear"></td></tr>
+</form>
+</div>
+</body>
+</html>

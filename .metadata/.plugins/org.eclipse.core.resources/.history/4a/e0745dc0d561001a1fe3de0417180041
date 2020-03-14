@@ -1,0 +1,42 @@
+package testing;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
+public class Testing {
+	@Test
+	@RepeatedTest(3)
+	public void test() {
+		System.out.println("This is from testing class in junit testing program....");
+	}
+	@BeforeEach
+	public void preMethod() {
+		System.out.println("This is from before method....");
+	}
+	@AfterEach
+	public void postMethod() {
+		System.out.println("This is from after method...");
+	}
+	@BeforeAll
+	public static void beforeAll() {
+		System.out.println("This is from before all...");
+	}
+	@AfterAll
+	public static void afterAll() {
+		System.out.println("This is from before all...");
+	}
+	@ParameterizedTest
+	@ValueSource(strings= {"race","aravind"})
+	void Login(String str) {
+		System.out.println(str);
+	}
+	
+
+
+}

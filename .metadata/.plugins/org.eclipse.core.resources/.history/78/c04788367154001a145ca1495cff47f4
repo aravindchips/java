@@ -1,0 +1,20 @@
+package stereotype;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("myCoach")
+public class TennisCoach {
+	private FortuneService fs;
+	@Autowired
+	public TennisCoach(FortuneService fs) {
+		this.fs=fs;
+	}
+	public String getDailyWorkOut() {
+		return "Do Work Out Daily For Success...";
+	}
+	public String getFortune() {
+		return fs.getMessage();
+	}
+
+}

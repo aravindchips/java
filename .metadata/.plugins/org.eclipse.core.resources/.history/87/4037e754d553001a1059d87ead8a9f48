@@ -1,0 +1,9 @@
+package noxmlfile;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class ConfigFile {
+	@Bean
+
+}

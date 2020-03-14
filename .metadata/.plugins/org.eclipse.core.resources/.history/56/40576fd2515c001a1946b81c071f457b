@@ -1,0 +1,12 @@
+package relations;
+
+import org.hibernate.SessionFactory;
+
+public class HibernateUtil {
+	private static SessionFactory sessionFactory;
+	
+	public static SessionFactory getSessionFactory() {
+		SessionFactory factory=new Configuration.configure().buildSessionFactory();
+	}
+
+}

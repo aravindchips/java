@@ -1,0 +1,16 @@
+package categories;
+
+import org.junit.experimental.categories.Category;
+
+public class TestCategory1 {
+	@Category(RegressionTests.class)
+	public void test() {
+		System.out.println("Hai i am from regression method from testcategory1 class...");
+		
+	}
+	@Category(PerformanceTests.class)
+	public void test1() {
+		System.out.println("Hai i am performance test from testcategory1.class....");
+	}
+
+}

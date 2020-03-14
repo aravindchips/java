@@ -1,0 +1,9 @@
+package stereotype;
+
+@Component
+public class FortuneService {
+	public String getMessage() {
+		return "I am form fortune service class";
+	}
+
+}

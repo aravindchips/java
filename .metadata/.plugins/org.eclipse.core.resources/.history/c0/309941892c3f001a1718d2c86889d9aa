@@ -1,0 +1,33 @@
+package sumofdigits;
+import java.util.Scanner;
+public class PlayCarrom {
+	public static void main(String[] args) {
+	 Scanner sc=new Scanner(System.in);
+	   String team=sc.nextLine(); 
+	   int n=team.length();
+	   char[] ch=new char[n];
+	   int count=0;
+	  // System.out.println(n);
+	   
+	   for(int i=0;i<n;i++) {
+		   
+		   ch[i]=team.charAt(i);
+		//  System.out.print(ch[i]);
+	   
+	    
+		if(ch[0]=='A'||ch[0]=='C') {
+			if(ch[2]==1&&ch[2]<=9)
+			count=ch[2]+ch[6];
+			System.out.print(count);
+		}
+		if(ch[0]=='B'||ch[0]=='D') {
+			count=count+ch[2]+ch[6];
+			System.out.println(count);
+		}
+		if(ch[0]=='#') {
+			System.out.println("Incomplete Game");
+		}
+	   } 
+	    
+}
+}

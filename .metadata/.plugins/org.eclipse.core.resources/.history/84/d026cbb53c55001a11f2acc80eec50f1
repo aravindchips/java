@@ -1,0 +1,55 @@
+package dao;
+
+import java.util.List;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import data.Student;
+
+public class StudentDaoImpl implements IStudentDAO {
+	JdbcTemplate jdbcTemplate;
+	
+
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
+
+	@Override
+	public void create(Student student) {
+		// TODO Auto-generated method stub
+		String query="insert into student values('"+student.getId()+"','"+student.getName()+"','"+student.getAge()+"')";
+		int result=jdbcTemplate.update(query);
+		System.out.println(result+"Record inserted");
+
+	}
+
+	@Override
+	public Student getStudent(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Student> getStudents() {
+		// TODO Auto-generated method stub
+		String query="select *from student";
+		jdbcTemplate.update(query);
+		return null;
+	}
+
+	@Override
+	public void delete(Integer id,Student student) {
+		// TODO Auto-generated method stub
+		String query="delete from student where id='"+student.getId()+"'";
+		int del=jdbcTemplate.update(query);
+		System.out.println( del+" "+"record deleted");
+
+	}
+
+	@Override
+	public void update(Student student) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

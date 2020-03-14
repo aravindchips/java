@@ -1,0 +1,10 @@
+package setters;
+
+import java.util.List;
+
+public class Question {
+	int qno;
+	String question;
+	List<String>answers;
+
+}

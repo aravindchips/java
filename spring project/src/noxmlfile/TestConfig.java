@@ -1,0 +1,21 @@
+package noxmlfile;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class TestConfig {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext ctx=new AnnotationConfigApplicationContext(ConfigFile.class);
+		HelloWorld hl=(HelloWorld)ctx.getBean(HelloWorld.class);
+		hl.setMessage("Hai Aravind");
+		hl.getMessage();
+		hl.showData();
+		Employee em=ctx.getBean(Employee.class);
+		em.show();
+		em.getName();
+
+	}
+
+}

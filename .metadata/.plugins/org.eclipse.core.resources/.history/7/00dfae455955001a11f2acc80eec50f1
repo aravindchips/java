@@ -1,0 +1,83 @@
+package main;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import dao.StudentDaoImpl;
+import data.Student;
+
+public class TestStudent {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	    ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
+		StudentDaoImpl sdao=(StudentDaoImpl)context.getBean("edao");
+		Student student=new Student();
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Choose ur operation");
+		System.out.println("1.Insert");
+		System.out.println("2.Delete");
+		System.out.println("3.Update");
+		System.out.println("4.View");
+		System.out.println("5.exit");
+		System.out.println("Enter ur choice");
+		int choice=sc.nextInt();
+		while(true) {
+			
+			
+			switch(choice) {
+			                case 1:
+			                	   System.out.println("Enter Student id");
+			                       int id=sc.nextInt();
+		           //sc.nextLine();
+			                       System.out.println("Enter student name");
+			                       String name=sc.next();
+			                       System.out.println("Enter Student Age");
+			                       int age=sc.nextInt();
+			                       sdao.create(student);
+			                       break;
+			                 case 2:
+			                	    System.out.println("Enter Student id");
+		                            id=sc.nextInt();
+				                    sdao.delete(id);
+				                    break;
+			                 case 3:
+			                	    System.out.println("Enter Student id");
+	                                id=sc.nextInt();
+	                                System.out.println("Enter Student Age");
+			                        age=sc.nextInt();
+			                        sdao.update(student);
+			                        break;
+			                case 4:
+			                	   List<Student> students=sdao.getStudents();
+				                   for(Student s:students) 
+					               System.out.println(s.getId()+s.getName()+s.getAge());
+				                   break;
+			                case 5:
+			                	   System.out.println("U are exited from operations...");
+			                       break;
+		                   default:System.out.println("Choose from options...");
+		}
+		}
+		
+		
+		/*student.setId(id);
+		student.setName(name);
+		//student.setAge(age);
+		
+		
+		}*/
+		
+		/*student.setId(id);
+		student.setName(name);
+		student.setAge(age);
+		boolean check=sdao.saveStudentByPst(student);
+		System.out.println("Result is"+check);*/
+
+	}
+
+}

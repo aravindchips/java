@@ -1,0 +1,13 @@
+import java.util.function.Function;
+public class TestStudent {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student emp1=new Student("Aravind","1234",50);
+		Student emp2=new Student("Venkat","2345",60);
+		Student emp3=new Student("Dheeraj","3456",70);
+		
+
+	}
+
+}

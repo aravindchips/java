@@ -1,0 +1,10 @@
+
+public class TestEmployee {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee emp1=new Employee("Aravind","Developer","Hyderabad","50000f");
+
+	}
+
+}

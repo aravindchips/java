@@ -1,0 +1,21 @@
+package mapping;
+import java.util.*;
+class Student {
+	String name;
+	int m1,m2,total;
+	Student(int m1,int m2,int total){
+		this.m1=m1;
+		this.m2=m2;
+		this.total=total;
+	}
+}
+
+public class MapExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<Student> hm=new HashMap<Student>();
+
+	}
+
+}

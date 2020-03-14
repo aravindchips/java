@@ -1,0 +1,16 @@
+package spring;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext cont=new ClassPathXmlApplicationContext("mapquestion-bean.xml");
+		Questionusingmap qump=(Questionusingmap)cont.getBean("qump");
+		qump.showAnswers();
+
+	}
+
+}

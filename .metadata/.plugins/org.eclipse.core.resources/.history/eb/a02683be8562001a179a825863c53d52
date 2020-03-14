@@ -1,0 +1,21 @@
+package testbean;
+
+public class Details {
+	public static void throwit() {
+		System.out.println("throwit");
+		throw new RuntimeException();
+	}
+
+public static void main(String args[]) {
+	try {
+		System.out.println("Hello");
+		throwit();
+	}catch(Exception re) {
+		System.out.println("Caught");
+	}
+	finally {
+		System.out.println("Finally");
+	}
+}
+
+}

@@ -1,0 +1,29 @@
+package jdbcprograms;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class EmployeeDao {
+	private JdbcTemplate jdbcTemplate;
+
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
+	public int saveEmployee(Employee e) {
+		String query="insert into employee(empid,empname,desg)"+"values('"+e.getEmpid()+"','"+e.getEmpname()+"','"+e.getDesg()+"')";
+		return jdbcTemplate.update(query);
+	}
+	/*public int updateEmployee(Employee e) {
+		String query="update employee set dept='"+e.getDept()+"'where empid='"+e.getEmpid()+"'";
+		return jdbcTemplate.update(query);
+	}*/
+	public int deleteEmployee(Employee e) {
+		String query="delete from employee where empid='"+e.getEmpid()+"'";
+		return jdbcTemplate.update(query);
+	}
+	public int updateEmployee(Employee e,empname) {
+		String query="update employee set empname='?' where empid='"+e.getEmpid()+"'";
+		return jdbcTemplate.update(query);
+	}
+	
+
+}

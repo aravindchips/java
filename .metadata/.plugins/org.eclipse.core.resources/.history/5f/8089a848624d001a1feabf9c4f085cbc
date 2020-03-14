@@ -1,0 +1,11 @@
+package test;
+
+import java.util.HashMap;
+
+public class UserMainCode {
+	public void HashMap<Integer,Integer> increaseSalaries(HashMap<Integer,String> hm1,HashMap<Integer,Integer> hm2){
+		HashMap<Integer,Integer> hm3=new HashMap<Integer,Integer>();
+		
+	}
+
+}

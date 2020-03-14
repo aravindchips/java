@@ -1,0 +1,30 @@
+package hibernate.HibernateAnnotations;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+
+
+public class TestAnnotations {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Configuration cfg = new Configuration();
+		cfg.configure("hibernate-cfg.xml");
+		SessionFactory factory=cfg.buildSessionFactory();
+		Session session=factory.openSession();
+		Transaction t=session.beginTransaction();
+		Employee st=new Employee();
+		//st.setId(111);
+		st.setFtName("Shivam");
+		st.setLtName("Bhai");
+		session.save(st);
+		t.commit();
+		session.close();
+		factory.close();
+
+	}
+
+}

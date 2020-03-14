@@ -1,0 +1,5 @@
+package eventhandlers;
+
+public class StopEventHandler {
+
+}

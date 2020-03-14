@@ -1,0 +1,16 @@
+package noxmlfile;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestDependent {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ClassPathXmlApplicationContext cont=new ClassPathXmlApplicationContext("person-address.xml");
+		Person pr=cont.getBean(Person.class);
+		pr.show();
+		pr.getAddress();
+
+	}
+
+}

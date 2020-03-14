@@ -1,0 +1,15 @@
+package testbean;
+
+public class Details {
+	
+private void display() {
+	System.out.println("Display()");
+}
+private static void show() {
+	display();
+	System.out.println("show()");
+}
+public static void main(String args[]) {
+	show();
+}
+}

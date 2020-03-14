@@ -1,0 +1,16 @@
+package operations;
+import java.io.*;
+public class BufferedRead {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		try(InputStreamReader ipr=new InputStreamReader(System.in);
+			BufferedReader br=new BufferedReader(ipr)){
+			
+			
+		}
+		
+
+	}
+
+}

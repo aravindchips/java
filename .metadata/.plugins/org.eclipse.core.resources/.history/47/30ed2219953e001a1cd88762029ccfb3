@@ -1,0 +1,30 @@
+package operations;
+import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
+class Product{
+	int num,cost;
+	String name;
+	Product(int num,String name,int cost){
+		this.num=num;
+		this.cost=cost;
+		this.name=name;
+	}
+}
+public class StreamExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Product> pl=new ArrayList<Product>();
+		pl.add(new Product(1,"Apple",50000));
+		pl.add(new Product(1,"Apple",77000));
+		pl.add(new Product(1,"Apple",660000));
+		pl.add(new Product(1,"Apple",6000));
+		
+		Double avg=pl.stream().collect(Collectors.averagingDouble(p->p.cost));
+		System.out.println(avg);
+
+
+	}
+
+}

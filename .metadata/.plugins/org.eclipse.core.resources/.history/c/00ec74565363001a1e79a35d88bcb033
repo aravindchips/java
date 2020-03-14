@@ -1,0 +1,15 @@
+package testing;
+
+import org.junit.runner.JUnitCore;
+
+import suite.JunitTestSuite;
+
+public class TestRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JUnitCore.runClasses(JunitTestSuite.class);
+
+	}
+
+}

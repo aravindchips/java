@@ -1,0 +1,13 @@
+package test;
+
+public class HashMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap hm1=new HashMap<Integer,String>();
+		HashMap hm2=new HashMap();
+		
+
+	}
+
+}

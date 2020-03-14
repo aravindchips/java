@@ -1,0 +1,28 @@
+package test;
+import java.util.*;
+
+public class has {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		HashMap<Integer,Employee> hm1=new HashMap<Integer,Employee>();
+		HashMap<Integer,Employee> hm2=new HashMap<Integer,Employee>();
+ 		System.out.println("Enter no of employees");
+ 		int num=sc.nextInt();
+ 		int id=0;
+ 		int sal=0;
+ 		String desg;
+ 		for(int i=0;i<num;i++) {
+ 			System.out.println("Enter employee id");
+ 			id=sc.nextInt();
+ 			System.out.println("Enter designation");
+ 			 desg=sc.nextLine();
+ 			System.out.println("Enter employee salary");
+ 			sal=sc.nextInt();
+ 		}
+ 		hm1.put(id,desg);
+
+	}
+
+}

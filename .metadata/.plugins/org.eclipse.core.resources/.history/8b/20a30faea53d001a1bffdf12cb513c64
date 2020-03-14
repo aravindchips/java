@@ -1,0 +1,45 @@
+package mapping;
+import java.util.*;
+/*class Employ{
+	//int id;
+	String name;
+	Employ(String name){
+		//this.id=id;
+		this.name=name;
+	}
+	@Override
+	public String toString() {
+		return "Employ [name=" + name + "]";
+	}
+	
+}*/
+
+
+
+public class HashMapp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		HashMap<Integer,String> hm=new HashMap<Integer,String>();
+		ArrayList<String> ar=new ArrayList<String>();
+		hm.put(101,"Aravind");
+		hm.put(101,"vinoD");
+		hm.put(101,"venkaT");
+		Set entries=hm.entrySet();
+		Iterator itr=entries.iterator();
+		while(itr.hasNext()) {
+		  Map.Entry me=(Map.Entry)itr.next();
+		  String str=(String)me.getValue();
+		  //Employ e=(Employ)me.getValue();
+		  if(str.charAt(0)>=97 && str.charAt(0)<=122 && str.charAt(str.length()-1)>=65 && str.charAt(str.length()-1)>=95) {
+		        ar.add(str);
+		  }
+	}
+		System.out.println("Names are");
+		for(String c:ar) {
+			System.out.println(c.);
+		}
+
+}
+}

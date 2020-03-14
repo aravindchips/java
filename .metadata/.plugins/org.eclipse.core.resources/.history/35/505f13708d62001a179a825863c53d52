@@ -1,0 +1,11 @@
+package testbean;
+
+class Details extends Thread{
+	public void run() {
+		System.out.println("Hi");
+	}
+	public static void main(String args[]) {
+		Details d1=new Details();
+		Details d2=new Details();
+	}
+}

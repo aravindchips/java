@@ -1,0 +1,50 @@
+package jdbcprograms;
+
+import java.util.Scanner;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestEmployeeJdbc {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext cont=new ClassPathXmlApplicationContext("jdbc-springbean.xml");
+		EmployeeDao empdao=(EmployeeDao)cont.getBean("edao");
+		Employee emp=new Employee();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter empid");
+		String empid=sc.next();
+		System.out.println("Enter empname");
+		String empname=sc.next();
+		int count=empdao.updateEmployee(empid,empname);
+		if(count==1) {
+			
+			
+			System.out.println("record updated");
+		}
+		else
+			System.out.println("record not updated");
+		//emp.setEmpname("Subramanya Sai");
+		//emp.setDept("IT");
+		/*int status=empdao.saveEmployee(emp);
+		System.out.println(status);
+		System.out.println("Record Inserted");*/
+		/*int count=empdao.updateEmployee(emp);
+		System.out.println(count);
+		if(count==1) {
+			System.out.println("Recor Updated");
+		}
+		else
+			System.out.println("Recor not updated..");*/
+	
+		/*int del=empdao.deleteEmployee(emp);
+		if(del==1) {
+			System.out.println("Record deleted ");
+		}
+		else
+			System.out.println("Not deleted");*/
+
+	}
+
+}

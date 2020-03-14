@@ -1,0 +1,20 @@
+import java.util.function.Function;
+public class NoOfVowels {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Function<String,Integer> f=str->{
+			int count=0;
+			String str;
+			for(int i=0;i<str.length();i++) {
+				if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u') {
+					count++;
+				}
+				System.out.println(f.apply());
+				
+			}
+		};
+
+	}
+
+}

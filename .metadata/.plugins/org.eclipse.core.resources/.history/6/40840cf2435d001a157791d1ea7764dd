@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background-color:#FFAACC;
+}
+h1{
+color:#770080;
+font-family:Courier New;
+font-style:italic;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<h1> College Training Feedback Form</h1>
+<center>
+<form onsubmit="return caluclateFeedbackRating()">
+<table>
+<tr><td><label> Participant Name </label> </td>    
+ <td><input type="text" name="participantName" placeholder="enter your  name" required></td></tr>
+<tr><td> <label> College Name</label></td>
+ <td><input type="text" name="collegeName" required></td></tr>
+ <tr><td><label>Participant Address</label></td>
+ <td><textarea name="participantAddress" rows="5" cols="20" required></textarea></td></tr>
+ <tr><td><label> Gender </label></td>
+ <td><input type="radio" name="gender" value="male">male<input type="radio" name="gender" value="female">female</td></tr>
+ <tr><td><label> Email ID</label></td>
+ <td><input type="email" name="email" required></td></tr>
+ <tr><td><label> Mobile Number </label></td>
+ <td><input type="tel" name="MobileNumber" required></td></tr>
+ <tr><td><label>Trainers Name </label></td>
+ <td><input type="text" name="trainername" id="tname" required></td></tr>
+ <tr><td><label> Course Name </label></td>
+<td> <input type="text" name="coursename" required></td></tr>
+ <tr><td><label>Course Completion date</label></td>
+ <td><input type="date" name="date" required><br></td></tr>
+<tr><td> <label>Trainers Feedback</label></td>
+ <td><input type="text" name="trainerFeedback" list="feedback" id="fb" autocomplete="on">
+ <datalist id="feedback">
+ <option>excellent</option>
+ <option>very good</option>
+ <option>good</option>
+ <option>average</option>
+ <option>below average</option>
+ </datalist></td></tr>
+
+ <tr><td><input type="submit" name="submit" value="submitfeedback" onclick="return caluclateFeedbackRating()">
+
+ </td><td> <input type="reset" name="reset" value="clear"> </td></tr>
+ </table>
+ 
+</form>
+<div id="result">
+</div>
+<script type="text/javascript">
+ function caluclateFeedbackRating()
+ {
+	 var feedback=document.getElementById("fb").value;
+	 var trainer=document.getElementById("tname").value;
+	 var feedbackrate="";
+	 if(feedback =="excellent")
+		 {
+		 feedbackrate=5;
+		 }
+	 else if(feedback=="very good")
+		 {
+		 feedbackrate=4;
+		 }
+	 else if(feedback=="good")
+	 {
+	      feedbackrate=3;
+	 }
+	 else if(feedback=="average")
+	 {
+	     feedbackrate=2;
+	 }
+	 else if(feedback=="below average")
+	 {
+	 	feedbackrate=1;
+	 }
+	
+	document.getElementById("result").innerHtml="feedback rating of "+trainer+"is"+feedbackrate;
+	 return false;
+ }
+</script>
+</center>
+</body>
+</html>

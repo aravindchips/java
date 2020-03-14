@@ -1,0 +1,29 @@
+package test;
+
+import java.util.Scanner;
+
+public class Employee {
+	Integer id;
+	String designation;
+	Integer salary;
+	public Employee(Integer id,String designation,Integer salary) {
+		this.id=id;
+		this.designation=designation;
+		this.salary=salary;
+		
+	}
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", designation=" + designation + ", salary=" + salary + "]";
+	}
+	public static void main(String args[]) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter employees");
+		int n=sc.nextInt();
+		for(int i=0;i<n;i++) {
+			
+		}
+	
+	}
+
+}

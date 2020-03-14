@@ -1,0 +1,37 @@
+package testing;
+
+
+public class Testing {
+
+public void test() {
+		System.out.println("This is from testing class in junit testing program....");
+	}
+	//@BeforeClass
+	public static void preMethod() {
+		System.out.println("This is from before method....");
+	}
+	//@AfterEach
+	public void postMethod() {
+		System.out.println("This is from after method...");
+	}
+	//@BeforeAll
+	public static void beforeAll() {
+		System.out.println("This is from before all...");
+	}
+//	@AfterAll
+	public static void afterAll() {
+		System.out.println("This is from before all...");
+	}
+//	@ParameterizedTest
+	//@ValueSource(strings= {"race","aravind"})
+	public void Login(String str) {
+		System.out.println(str);
+	}
+	//@Disabled
+	void testing() {
+		System.out.println("This is from disabled...");
+	}
+	
+
+
+}

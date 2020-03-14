@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+<ul>
+<li><a href="Home.html">DisplayEmployee</a></li>
+<li><a href="About.html">DeleteEmployee</a></li>
+<li><a href="Services.html">SearchEmployee</a></li>
+<li><a href="Login.html">UpdateEmployee</a></li>
+
+</ul>
+</form>
+</body>
+</html>

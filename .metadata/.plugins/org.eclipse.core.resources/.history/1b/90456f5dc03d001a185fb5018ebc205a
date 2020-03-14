@@ -1,0 +1,25 @@
+package test;
+import java.util.*;
+class Test{
+	int sum=0;
+	public void getSum() {
+		Scanner sc=new Scanner(System.in);
+		int number=sc.nextInt();
+		while(number!=0) {
+			int rem=number%10;
+			sum=sum+rem;
+			number=number/10;
+		}
+		System.out.println(sum);
+	}
+}
+public class SumOfOddDigits {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Test t=new Test();
+		t.getSum();
+
+	}
+
+}

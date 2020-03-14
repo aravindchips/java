@@ -1,0 +1,22 @@
+package testbean;
+
+class Details {
+	
+private void display() {
+	System.out.println("Display()");
+}
+private static void show() {
+	display();
+	System.out.println("show()");
+}
+public static void main(String args[]) {
+	Details de=new Details();
+	System.out.println("Ant");
+}
+static {
+	System.out.println("Dog");
+}{
+
+System.out.println("Man");	
+}
+}

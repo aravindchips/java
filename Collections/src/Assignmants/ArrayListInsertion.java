@@ -1,0 +1,17 @@
+package Assignmants;
+import java.util.ArrayList;
+public class ArrayListInsertion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList arl=new ArrayList();
+		arl.add("Aravind");
+		
+		System.out.println(arl);
+		
+		
+		
+
+	}
+
+}

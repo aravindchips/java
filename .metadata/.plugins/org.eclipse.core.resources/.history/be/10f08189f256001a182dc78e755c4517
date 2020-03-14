@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+String name=request.getParameter("name");
+int age=Integer.parseInt(request.getParameter("age"));
+out.println("Ur name and age are as follows");
+out.println(name+age);
+out.println("\nThe Movie Prices are as follows:");
+if(age>62){
+	out.println("ur age is"+age+"U should pay $7.00 for the movie ticket...");
+}
+else if(age<10){
+	out.println("Ur age is"+age+"U should apy $5.00 for booing a movie ticket...");
+}
+else{
+	out.println("Ur age is"+age+"not in the consideration list So, Please pay $9.50 for booking a movie ticket....");
+}
+%>
+</body>
+</html>

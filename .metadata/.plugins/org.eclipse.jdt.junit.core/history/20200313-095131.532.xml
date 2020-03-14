@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Testing" project="Junittt" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="testing.Testing" time="0.026" displayname="Testing" uniqueid="[engine:junit-jupiter]/[class:testing.Testing]">
+    <testcase name="test" classname="testing.Testing" time="0.0" displayname="test()" uniqueid="[engine:junit-jupiter]/[class:testing.Testing]/[method:test()]"/>
+    <testsuite name="test(testing.Testing)" time="0.0" displayname="test()" uniqueid="[engine:junit-jupiter]/[class:testing.Testing]/[test-template:test()]">
+      <testcase name="test" classname="testing.Testing" time="0.0" dynamicTest="true" displayname="repetition 1 of 3" uniqueid="[engine:junit-jupiter]/[class:testing.Testing]/[test-template:test()]/[test-template-invocation:#1]"/>
+      <testcase name="test" classname="testing.Testing" time="0.0" dynamicTest="true" displayname="repetition 2 of 3" uniqueid="[engine:junit-jupiter]/[class:testing.Testing]/[test-template:test()]/[test-template-invocation:#2]"/>
+      <testcase name="test" classname="testing.Testing" time="0.0" dynamicTest="true" displayname="repetition 3 of 3" uniqueid="[engine:junit-jupiter]/[class:testing.Testing]/[test-template:test()]/[test-template-invocation:#3]"/>
+    </testsuite>
+    <testsuite name="Login(testing.Testing)" time="0.026" displayname="Login(String)" parameters="java.lang.String" uniqueid="[engine:junit-jupiter]/[class:testing.Testing]/[test-template:Login(java.lang.String)]">
+      <testcase name="Login" classname="testing.Testing" time="0.026" dynamicTest="true" displayname="[1] race" parameters="java.lang.String" uniqueid="[engine:junit-jupiter]/[class:testing.Testing]/[test-template:Login(java.lang.String)]/[test-template-invocation:#1]"/>
+      <testcase name="Login" classname="testing.Testing" time="0.008" dynamicTest="true" displayname="[2] aravind" parameters="java.lang.String" uniqueid="[engine:junit-jupiter]/[class:testing.Testing]/[test-template:Login(java.lang.String)]/[test-template-invocation:#2]"/>
+    </testsuite>
+  </testsuite>
+</testrun>

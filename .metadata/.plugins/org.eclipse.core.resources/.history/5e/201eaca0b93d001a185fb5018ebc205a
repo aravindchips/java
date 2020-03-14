@@ -1,0 +1,36 @@
+package mapping;
+import java.util.*;
+
+public class Combination {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap hm=new HashMap();
+		ArrayList al=new ArrayList();
+		TreeSet tr=new TreeSet();
+		PriorityQueue pq=new PriorityQueue();
+		
+		al.add(100);
+		al.add(200);
+		tr.add("Aravind");
+		tr.add("Sai");
+		pq.add(20);
+		hm.put(1,al);
+		hm.put(2,tr);
+		hm.put(3,pq);
+		Set set=hm.entrySet();
+		Iterator itr=set.iterator();
+		while(itr.hasNext()) {
+			Map.Entry entry=(Map.Entry)itr.next();
+			Collection c=(Collection)entry.getValue();
+			
+				
+				
+			}
+			
+			
+		}
+
+	}
+
+

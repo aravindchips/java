@@ -1,0 +1,22 @@
+package test;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+class UserMainCode{
+	public static HashMap increaseSaleries(int n,HashMap<Integer,String> hm1,HashMap<Integer,Integer> hm2) {
+		
+	}
+}
+
+public class TestEmployee {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		HashMap<Integer,String> hm1=new HashMap<Integer,String>();
+		HashMap<Integer,Integer> hm2=new HashMap<Integer,Integer>();
+
+	}
+
+}

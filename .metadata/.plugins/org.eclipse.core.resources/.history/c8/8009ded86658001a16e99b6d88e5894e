@@ -1,0 +1,35 @@
+package hibernate.HibernateAnnotations;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Employee {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id", updatable = true, nullable = false)
+	private int id;
+	private String ftName,ltName;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getFtName() {
+		return ftName;
+	}
+	public void setFtName(String ftName) {
+		this.ftName = ftName;
+	}
+	public String getLtName() {
+		return ltName;
+	}
+	public void setLtName(String ltName) {
+		this.ltName = ltName;
+	}
+
+}

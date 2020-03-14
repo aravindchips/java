@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="green">
+
+<ul>
+<li><a href="Home.html">Home</a></li>
+<li><a href="About.html">About Us</a></li>
+<li><a href="Services.html">Services</a></li>
+<li><a href="Login.html" target="_blank">Login</a></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+package testbean;
+
+public class Details {
+	private String name;
+	private String pswd;
+	private int age;
+	public Details(){
+		
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getPswd() {
+		return pswd;
+	}
+	public void setPswd(String pswd) {
+		this.pswd = pswd;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+}

@@ -1,0 +1,37 @@
+package mapping;
+import java.util.*;
+import java.util.function.*;
+class Student{
+	String name;
+	int m1,m2,total;
+	Student(int m1,int m2){
+		this.m1=m1;
+		this.m2=m2;
+		total=m1+m2;
+	}
+	
+	
+}
+
+public class MapExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap hm=new HashMap();
+		Student s1=new Student(80,30);
+		Student s2=new Student(30,50);
+		Student s3=new Student(60,30);
+		Student s4=new Student(50,70);
+		hm.put("101","Aravind");
+		hm.put("102", "Venkat");
+		hm.put("103", "Sai");
+		hm.put("104", "Surya");
+		System.out.println(hm);
+		
+		
+		
+		
+
+	}
+
+}

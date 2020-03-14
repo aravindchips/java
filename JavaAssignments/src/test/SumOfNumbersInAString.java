@@ -1,0 +1,19 @@
+package test;
+import java.util.Scanner;
+public class SumOfNumbersInAString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter ur String");
+		String s=sc.next();
+		String str="";
+		int n=sc.nextInt();
+		int l=s.length();
+		for(int i=0;i<n;i++)
+			str+=s.charAt(i);
+		for(int i=l-n;i<l;i++)
+			str+=s.charAt(i);
+		System.out.println(str);
+}
+}

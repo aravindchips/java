@@ -1,0 +1,42 @@
+package operations;
+import java.util.*;
+import java.util.stream.Collectors;
+class Product{
+	String name;
+	int cost;
+	@Override
+	public String toString() {
+		return "Product [name=" + name + ", cost=" + cost + "]";
+	}
+	Product(String name,int cost){
+		this.name=name;
+		this.cost=cost;
+		
+	}
+}
+
+
+public class ProductsExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Product p1=new Product("Apple",50000);
+		Product p2=new Product("Sony",40000);
+		Product p3=new Product("SamSung",65000);
+		Product p4=new Product("Apple",750000);
+		Product p5=new Product("LG",70000);
+		Product p6=new Product("Apple",100000);
+		ArrayList<Product> al=new ArrayList<Product>();
+		al.add(p1);
+		al.add(p2);
+		al.add(p3);
+		al.add(p4);
+		al.add(p5);
+		al.add(p6);
+		Product p=al.stream().filter(a->a.equals("Apple"))
+				.max((Product a,Product b)->a.cost<b.cost?-1:1)
+				.get();
+         System.out.println(p);    
+	}
+
+}

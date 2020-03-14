@@ -1,0 +1,14 @@
+hbm2ddl=update
+dialect=org.hibernate.dialect.MySQLDialect
+connection.driver_class=com.mysql.jdbc.Driver
+connection.url=jdbc:mysql://localhost:3306/hiber
+connection.username=root
+connection.password=root
+
+hibernate.dialect= org.hibernate.dialect.Oracle9Dialect  
+hibernate.connection.driver_class= oracle.jdbc.driver.OracleDriver  
+hibernate.connection.url= jdbc:oracle:thin:@localhost:1521:xe  
+hibernate.connection.username= system  
+hibernate.connection.password=jtp  
+hibernate.show_sql=true    
+hibernate.hbm2ddl=update 

@@ -1,0 +1,10 @@
+package commonelements;
+
+public class SumOfElements {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

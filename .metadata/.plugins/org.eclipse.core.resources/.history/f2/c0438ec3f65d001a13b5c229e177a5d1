@@ -1,0 +1,27 @@
+package utilities;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.sql.Connection;
+import java.util.Properties;
+
+public class DBHanadler {
+	public static Connection establishConnection() throws ClassNotFoundException,IOException{
+		Connection con=null;
+		FileInputStream fis=new FileInputStream("d://db.properties");
+		Properties properties=new Properties();
+		properties.load(fis);
+		try {
+			
+		}
+        catch(Exception e) {
+			
+		}
+		
+		finally {
+			
+		}
+		return null;
+	}
+
+}

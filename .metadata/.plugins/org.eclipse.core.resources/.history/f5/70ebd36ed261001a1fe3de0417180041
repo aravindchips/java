@@ -1,0 +1,14 @@
+package testing;
+
+import org.junit.jupiter.api.Test;
+
+public class Testing {
+	@Test
+	public void test() {
+		System.out.println("This is from testing class in junit testing program....");
+	}
+	public void preMethod() {
+		System.out.println("This is from before method....");
+	}
+
+}

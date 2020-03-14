@@ -1,0 +1,42 @@
+package main;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import dao.StudentDaoImpl;
+import data.Student;
+
+public class TestStudent {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
+		StudentDaoImpl sdao=(StudentDaoImpl)context.getBean("edao");
+		Student student=new Student();
+		System.out.println("Enter Student id");
+		int id=sc.nextInt();
+		
+		sc.nextLine();
+		System.out.println("Enter student name");
+		String name=sc.nextLine();
+		System.out.println("Enter Student Age");
+		int age=sc.nextInt();
+		sdao.update(student);
+		/*student.setId(id);
+		student.setName(name);
+		//student.setAge(age);
+		//sdao.create(student);
+		
+		List<Student> students=sdao.getStudents();
+		for(Student s:students) {
+			System.out.println(s.getId()+s.getName()+s.getAge());
+		}*/
+		//sdao.delete(id);
+
+	}
+
+}

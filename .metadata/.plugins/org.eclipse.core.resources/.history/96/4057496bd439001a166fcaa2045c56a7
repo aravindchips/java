@@ -1,0 +1,30 @@
+package sumofdigits;
+
+public class MathOperation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int sum=0;
+		float avg=0;
+		try{
+		int array[]=new int[args.length];
+		for(int i=0;i<array.length;i++)
+		{
+		array[i]=(args[i]);
+		sum=sum+array[i];
+		}
+		avg=sum/array.length;
+
+		}
+		catch(ArithmeticException e)
+		{
+		System.out.println("From ArithmeticException...");
+		}
+		catch(NumberFormatException e)
+		{
+		System.out.println("From NumberFormatException...");
+		}
+
+	}
+
+}

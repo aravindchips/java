@@ -1,0 +1,55 @@
+package mapping;
+import java.util.*;
+import java.util.function.*;
+class Student{
+	String name;
+	int m1,m2,total;
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", m1=" + m1 + ", m2=" + m2 + ", total=" + total + "]";
+	}
+	Student(int m1,int m2,String name){
+		this.m1=m1;
+		this.m2=m2;
+		this.name=name;
+		total=m1+m2;
+	}
+	
+	
+}
+
+public class MapExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<Integer,Student> hm=new HashMap<Integer,Student>();
+		Student s1=new Student(80,30,"Aravind");
+		Student s2=new Student(30,50,"Venkat");
+		Student s3=new Student(60,30,"Kishore");
+		Student s4=new Student(50,70,"Surya");
+		hm.put(101,s1);
+		hm.put(102,s2 );
+		hm.put(103,s3 );
+		hm.put(104,s4 );
+		Set entries=hm.entrySet();
+		Iterator itr=entries.iterator();
+		while(itr.hasNext()) {
+			Map.Entry me=(Map.Entry)itr.next();
+			Student s = (Student)me.getValue();
+			if(s.m2<=40) {
+				System.out.println(me.getKey()+"  "+s.name);
+			}
+			
+		}
+		
+		//System.out.println(hm);
+
+		
+		
+		
+		
+		
+
+	}
+
+}

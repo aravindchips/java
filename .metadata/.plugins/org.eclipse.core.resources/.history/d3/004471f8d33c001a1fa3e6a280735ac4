@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+import java.util.function.BiConsumer;
+
+class Employ{
+	String name;
+    double salary;
+    Employ(String name,double salary){
+    	this.name=name;
+    	this.salary=salary;
+    }
+}
+
+public class BiUserTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Employ>l=new ArrayList<Employ>();
+		l.add(new Employ("Aravind",10000));
+		l.add(new Employ("venkat",20000));
+		l.add(new Employ("chandu",30000));
+		l.add(new Employ("dinesh",40000));
+		BiConsumer<Employ,Double> c=(e,d)->e.salary=e.salary+d;
+		for(Employ e:l) {
+			c.accept(e,500.0);
+		}
+		for(Employ e:l) {
+			System.out.println("Employee name"+e.name);
+			System.out.println("Employee Salary"+e.salary);
+			System.out.println();
+		}
+
+
+
+	}
+
+}

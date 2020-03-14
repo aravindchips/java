@@ -1,0 +1,21 @@
+import java.util.function.Predicate;
+public class TestEmployee {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee emp1=new Employee("Aravind","Developer","Hyderabad",50000);
+		Employee emp2=new Employee("Venkat","Manager","Cyderabad",60000);
+		Employee emp3=new Employee("Dheeraj","Developer","Kurnool",70000);
+		Employee emp4=new Employee("Hari Kiran","Executive","Chennai",80000);
+		Employee emp5=new Employee("Dinesh","Associate","Hyderabad",90000);
+		Employee emp6=new Employee("Surya","Tester","Cyberabad",40000);
+		Employee emp7=new Employee("Chandu","Tester","Bangalore",30000);
+		Predicate<Employee> p1=emp->emp.edesg.equals("Developer");
+		Predicate<Employee> p2=emp->emp.esal==50000;
+		System.out.println(emp1);
+		System.out.println(emp2);
+		//System.out.println(p1.test(emp1));
+
+	}
+
+}

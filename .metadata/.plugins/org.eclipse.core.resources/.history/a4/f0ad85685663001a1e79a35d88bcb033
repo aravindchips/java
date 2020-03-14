@@ -1,0 +1,17 @@
+package suite;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
+import testing.TestJunit1;
+import testing.Testing;
+
+@RunWith(Suite.class)
+
+@Suite.SuiteClasses({
+	TestJunit1.class
+	
+})
+public class JunitTestSuite {
+
+}

@@ -1,0 +1,32 @@
+package hibernate;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.boot.Metadata;
+import org.hibernate.boot.MetadataSources;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+
+
+public class TestHibernateEmployee {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Configuration cfg = new Configuration();
+		cfg.configure("hibernate.cfg.xml");
+		SessionFactory factory=cfg.buildSessionFactory();
+		Session session=factory.openSession();
+		Transaction t=session.beginTransaction();
+		Employee st=new Employee();
+		st.setId(102);
+		st.setFtname("venkat");
+		st.setLtname("R");
+		session.save(st);
+		t.commit();
+		session.close();
+		factory.close();
+	}
+
+}

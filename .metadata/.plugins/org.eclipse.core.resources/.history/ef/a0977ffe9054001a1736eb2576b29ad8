@@ -1,0 +1,16 @@
+package jdbcprograms;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class EmployeeDao {
+	private JdbcTemplate jdbcTemplate;
+
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
+	public int saveEmployee(Employee e) {
+		String query="insert into employee(empid,empname,dept)"+"values('"+e.getEmpid()+"','"+e.getEmpname()+"','"+e.getDesg()+"')";
+	}
+	
+
+}

@@ -1,0 +1,24 @@
+package test;
+
+import java.util.Scanner;
+
+public class Employee implements Comparable{
+	Integer id;
+	String designation;
+	Integer salary;
+	public Employee(Integer id,String designation,Integer salary) {
+		this.id=id;
+		this.designation=designation;
+		this.salary=salary;
+		
+	}
+	public int compareTo(Employee e) {
+		return -1;
+	}
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", designation=" + designation + ", salary=" + salary + "]";
+	}
+	
+
+}

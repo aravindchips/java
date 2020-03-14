@@ -1,0 +1,11 @@
+package stereotype;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class TennisCoach {
+	public String getDailyWorkOut() {
+		return "Do Work Out Daily For Success...";
+	}
+
+}

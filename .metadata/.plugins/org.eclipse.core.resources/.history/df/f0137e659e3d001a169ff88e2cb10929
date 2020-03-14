@@ -1,0 +1,33 @@
+package mapping;
+import java.util.Iterator;
+import java.util.Set;
+class Employ{
+	//int id;
+	String name;
+	Employ(String name){
+		//this.id=id;
+		this.name=name;
+	}
+	@Override
+	public String toString() {
+		return "Employ [name=" + name + "]";
+	}
+	
+}
+
+
+
+public class HashMapp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		HashMap<Integer,Employ> hm=new HashMap<Integer,Employ>();
+		hm.put(101,new Employ("Aravind"));
+		hm.put(101,new Employ("vinoD"));
+		hm.put(101,new Employ("venkaT"));
+		Set entries=hm.entrySet();
+		Iterator itr=entries.iterator();
+	}
+
+}

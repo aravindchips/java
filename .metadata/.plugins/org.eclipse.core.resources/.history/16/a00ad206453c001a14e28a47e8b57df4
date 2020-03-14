@@ -1,0 +1,16 @@
+package Set;
+import java.util.*;
+public class SetsDescription {
+	public static void main(String args[]) {
+		Set s=new TreeSet();
+		s.add("India");
+		s.add("Japan");
+		System.out.println(s);
+		Iterator itr=s.iterator();
+		while(itr.hasNext()) {
+			System.out.println(itr.next());
+			
+		}
+	}
+
+}

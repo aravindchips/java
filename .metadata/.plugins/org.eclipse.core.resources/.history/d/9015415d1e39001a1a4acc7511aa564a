@@ -1,0 +1,23 @@
+package sumofdigits;
+
+public class ExceptTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=10,b=0,c;
+		try {
+		c=a/b;
+		String str = "Hello";
+		System.out.println(str.charAt(2));
+		System.out.println(c);
+		}
+		catch(ArithmeticException e) {
+			System.out.println("Inside the arthimetic exception.....");
+		}
+		finally {
+		System.out.println("Inside the finally statement....");	
+		}
+		System.out.println("After the finally block....");
+	}
+
+}

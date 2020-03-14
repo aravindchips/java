@@ -1,0 +1,12 @@
+package testing;
+
+import org.junit.Test;
+
+public class TestMessages {
+	@Test
+	public void test1() {
+		HelloWorld h=new HelloWorld();
+		assertEquals("Message1",h.msg1());
+	}
+
+}

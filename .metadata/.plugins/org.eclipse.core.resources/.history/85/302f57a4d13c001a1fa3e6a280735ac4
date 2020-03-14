@@ -1,0 +1,33 @@
+import java.util.*;
+class Employee{
+	String name;
+    double salary;
+    Employee(String name,double salary){
+    	this.name=name;
+    	this.salary=salary;
+    }
+}
+
+
+public class BiConsumerExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Employee>l=new ArrayList<Employee>();
+		l.add(new Employee("Aravind",10000));
+		l.add(new Employee("venkat",20000));
+		l.add(new Employee("chandu",30000));
+		l.add(new Employee("dinesh",40000));
+		BiConsumer<Employee,double> c=(e,d)->e.salary=e.salary+d;
+		for(Employee e:l) {
+			c.accept(e,500.0);
+		}
+		for(Employee e:l) {
+			System.out.println("Employee name"+e.name);
+			System.out.println("Employee Salary"+e.salary);
+			System.out.println();
+		}
+
+	}
+
+}

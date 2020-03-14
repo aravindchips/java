@@ -1,0 +1,23 @@
+INDEX VERSION 1.130
+D:\Soft\java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1786007150.index
+\JspSes\src
+D:\Soft\java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\39429835.index
+\ServletAssignment\src
+D:\Soft\java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1466196983.index
+\ProjectDevelopment\src
+D:\Soft\java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2286319862.index
+\JSTL\src
+D:\Soft\java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\756870357.index
+\Bnak\src
+D:\Soft\java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2122887705.index
+\UpdateDetails\src
+D:\Soft\java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2902955345.index
+\Jsp\src
+D:\Soft\java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\86778755.index
+\MVC\src
+D:\Soft\java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1559792918.index
+\Bank\src
+D:\Soft\java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\422475266.index
+\UseBean\src
+D:\Soft\java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3541007096.index
+\ActionTags\src

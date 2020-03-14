@@ -1,0 +1,15 @@
+package noxmlfile;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Person {
+	private Address address;
+	public Person(Address address) {
+		this.address=address;
+	}
+	public void show() {
+		System.out.println("hai i am form Person class..");
+	}
+
+}

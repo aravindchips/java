@@ -1,0 +1,16 @@
+package dao;
+
+import java.util.List;
+
+import data.Student;
+
+public interface IStudentDAO {
+	//used to create a record in table
+	public void create(Student student);
+	//used to get the particular record from the student table
+	public Student getStudent(Integer id);
+	//used to list down all the records from student table
+	public List<Student> getStudents();
+	
+
+}

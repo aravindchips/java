@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+<class name="hibernate.Employee" table="employee">
+<id name="id">
+<generator class="incremented"></generator>
+</id>
+<property name="ftname"></property>
+<property name="ltname"></property>
+</class>
+</hibernate-mapping>

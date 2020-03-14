@@ -1,0 +1,8 @@
+package test;
+
+public class Employee {
+	Integer id;
+	String designation;
+	Integer salary;
+
+}

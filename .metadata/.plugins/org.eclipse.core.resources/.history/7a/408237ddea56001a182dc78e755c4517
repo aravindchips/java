@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   <bean id="qump" class="spring.Questionusingmap">
+   <constructor-arg value="1."/>
+   <constructor-arg value="What is spring and explain its features"/>
+   <constructor-arg>
+   <map>
+   <entry key="Spring is a frame work,which is a developer friendly framework for developing the applications." value="Aravind"></entry>
+   <entry key="It completly reduces the developers work on each and every step in developing by its automation feature." value="Sai"></entry>
+   <entry key="Spring frame work is a frame work such that we can easily work on databases with the help of hibernate frame work as an integration." value="Sai"></entry>
+   </map>
+   </constructor-arg> 
+   
+   
+   </bean>
+   
+   </beans>

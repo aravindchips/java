@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"https://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="relations">
+
+<class name="cart" table="Cart">
+<id name="id" type="long">
+<column name="cart_id"/>
+<generator class="identity"/>
+</id>
+<property name="total" type="double">
+<column name="total"/>
+</property>
+<property name="name" type="String">
+<column name="name"/>
+</property>
+<Set name="items" table="Items" fetch="Select">
+<key>
+<column name="cart_id" not-null="true">
+
+</column>
+</key>
+<one-to-many class="Items"/>
+</Set>
+</class>
+</hibernate-mapping>

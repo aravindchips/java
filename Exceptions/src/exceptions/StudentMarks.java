@@ -1,0 +1,38 @@
+package exceptions;
+import java.util.Scanner;
+public class StudentMarks {
+	int sum1=0,sum2=0;
+	int avg1,avg2;
+	public void testMarks() throws NegativeValuesException,ValuesOutOfRangeException{
+		Scanner sc=new Scanner(System.in);
+		int marks1[]=new int[3];
+		int marks2[]=new int[3];
+		System.out.println("Enter marks of first student");
+		for(int i=0;i<3;i++) {
+			marks1[i]=sc.nextInt();
+		}
+		System.out.println("Enter marks of second student");
+		for(int i=0;i<3;i++) {
+			marks2[i]=sc.nextInt();
+		}
+		for(int i=0;i<3;i++) {
+			if((marks1[i]<0) ||(marks2[i]<0)){
+				throw new NegativeValuesException();
+				
+			}	
+			else if((marks1[i]<0) || (marks1[i]>100)||(marks2[i]<0)||(marks2[i]>100)) {
+				throw new ValuesOutOfRangeException();
+				
+			}
+			else {
+				sum1=sum1+(marks1[i]);
+				avg1=sum1/(marks1.length);
+				sum2=sum2+(marks2[i]);
+				avg2=sum2/(marks2.length);
+			}
+		}
+		System.out.println("Average marks of first student is "+" "+avg1);
+		System.out.println("Average marks of second student is "+" "+avg2);
+			
+		}
+}

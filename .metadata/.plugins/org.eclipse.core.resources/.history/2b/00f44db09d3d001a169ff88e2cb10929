@@ -1,0 +1,27 @@
+package mapping;
+import java.util.*;
+import java.util.function.*;
+class Employ{
+	//int id;
+	String name;
+	Employ(String name){
+		//this.id=id;
+		this.name=name;
+	}
+	@Override
+	public String toString() {
+		return "Employ [name=" + name + "]";
+	}
+	
+}
+public class HashMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<Integer,Employ> hm=new HashMap<Integer,Employ>();
+		hm.put()
+		
+
+	}
+
+}
