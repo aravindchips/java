@@ -1,0 +1,151 @@
+<html>
+    <head>
+       <title>
+           Connection
+       </title> 
+       <style>
+           h1{color : #006666;
+               text-align: center;
+               font-style: "verdana";
+           }
+           body{
+               background-color: #EED426;
+           }
+           table{
+               align:center;
+           }
+           #table{
+               margin-left:auto; 
+    margin-right:auto;
+           }
+            .table1{
+               margin-left:auto; 
+    margin-right:auto;
+           }
+           table.table1{
+  border: 1px solid black;
+}
+table.table1 td{
+  border: 1px solid black;
+}
+table.table1 th{
+  border: 1px solid black;}
+  p{text-align:center;}
+       </style>
+       <script>
+           function rentalCost()
+           {
+               var a=document.getElementByName("duration");
+               var b,c;
+               if (b=="Pre")
+               {
+                   if(c=="Local")
+                   var result=(a*200)+75;
+                   else if(c=="STD")
+                   var result=(a*350)+75;
+                   else if(c=="FullTalkTime")
+                   var result=(a*500)+75;
+               }
+               else if (b=="Post")
+               {
+                   if(c=="Local")
+                   var result=(a*200)+150;
+                   else if(c=="STD")
+                   var result=(a*350)+150;
+                   else if(c=="FullTalkTime")
+                   var result=(a*500)+150;
+               }
+               document.getElementById("result").innerHTML="The Total Monthly Rental Cost is Rs. "+result;
+           }
+       </script>
+    </head>
+    <body>
+         <h1>ACTB Connection Portal</h1>
+       <table id="table">
+           <tr>
+           <td>
+               <label>Customer Name</label>
+           </td>
+           <td>
+               <input type="text" name="custname"  pattern="[A-Za-z\s]" placeholder="Enter the customer name" required>
+           </td>
+           </tr>
+           <tr>
+               <td>
+               <label>Customer Email</label>
+           </td>
+           <td>
+               <input type="email" name="email" placeholder="abc@gmail.com" required>
+           </td>
+           </tr>
+           <tr>
+               <td>
+               <label>Mobile Number</label>
+           </td>
+           <td>
+               <input type="tel" name="mobile" placeholder="Enter the Mobile Number" pattern="[7-9]{1}[0-9]{9}" required>
+           </td>
+           </tr>
+            <tr>
+               <td>
+               <label>Connection Type</label>
+           </td>
+           <td>
+               <select id="connectiontype" name="conntype" required>
+  <option value="Pre">Pre</option>
+  <option value="Post">Post</option>
+               </select> 
+           </td>
+           </tr>
+           <tr>
+               <td>
+               <label>Scheme Name</label>
+           </td>
+           <td>
+               <input type="radio" id="scheme1" name="scheme" value="Local" required>
+  <label for="Local">Local</label>
+  <input type="radio" id="scheme2" name="scheme" value="STD">
+  <label for="STD">STD</label>
+  <input type="radio" id="scheme3" name="scheme" value="FullTalkTime">
+  <label for="FullTalkTime">FullTalkTime</label>
+           </td>
+           </tr>
+           <tr>
+               <td>
+               <label>Connection Duration</label>
+           </td>
+           <td>
+               <input type="number" name="duration" min="1" max="12" required>
+           </td>
+           </tr>
+            <tr>
+               <td>
+               <input type="submit" name="submit" value="Connection Bill Amount" onclick="rentalCost()">
+           </td>
+           <td>
+               <input type="reset" name="clear" value="Reset"> 
+           </td>
+           </tr>
+       </table>
+       <div id="result"></div>
+       <p>Rental Cost Table</p>
+       <table class="table1" id="rentalcost">
+  <tr>
+    <th>Connection Type</th>
+    <th>Call Limit</th>
+    <th>Monthly Rental</th>
+  </tr>
+  <tr>
+    <td>Pre</td>
+    <td>500</td>
+    <td>75</td>
+  </tr>
+  <tr>
+    <td>Post</td>
+    <td>Unlimited</td>
+    <td>150</td>
+  </tr>
+</table>
+       
+    </body>
+</html>

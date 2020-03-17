@@ -1,0 +1,124 @@
+<html>
+    <head>
+    <script lang="javascrpt" type="text/javascript">
+    function BillAmount(){
+        var ct=document.getElementById("connectiontype").value;
+        var  TotalMonthlyRentalCost;
+        var d=document.getElementsByName("duration")[0].value;
+        var s=document.getElementsByName("scheme");
+        for(var i = 0; i < s.length; i++) 
+            { 
+                if(s[i].checked){ 
+                s=s[i].value;
+			
+				}
+            }
+            if(s=="Local" && ct=="Pre")
+        TotalMonthlyRentalCost=(d*200)+75;
+        else if(s=="STD" && ct=="Pre")
+        TotalMonthlyRentalCost=(d*350)+75;
+        else if(s=="FullTalkTime" && ct=="Pre")
+        TotalMonthlyRentalCost=(d*500)+75;
+        else if(s=="Local" && ct=="Post")
+        TotalMonthlyRentalCost=(d*200)+150;
+        else if(s=="STD" && ct=="Post")
+        TotalMonthlyRentalCost=(d*350)+150;
+        else 
+        TotalMonthlyRentalCost=(d*500)+150;
+                
+       document.getElementById("result").innerHTML="The Total Monthly Rental Cost is Rs. "+TotalMonthlyRentalCost;
+        return false;
+    }
+    </script>
+    <style>
+    body
+    {
+        background-color:#EED426;
+    }
+    h1
+    {
+        text-align:center;
+        color:#006666;
+        font-family:verdana;
+    }
+    #rentalcost
+    {
+        border-style:solid ;
+        text-align:center;
+        float:right;
+    }
+    
+    #rentalcost th,#rentalcost td{
+        border: 1px solid;
+    }
+        </style>
+    </head>
+    <body>
+        <h1>ACTB Connection Portal</h1>
+          <form>
+        <table>
+            <tr>
+                <td>
+                    <label>Customer Name</label>
+                    </td>
+                    <td>
+                <input type="text" name="custname" pattern="^[A-Za-z\s]{1,}+$" placeholder="Enter the customer name" required/>
+                </td></tr>
+            <tr>
+                <td>
+                    <label>Customer Email</label></td>
+            <td>
+                <input type="email" name="email" placeholder="abc@gmail.com" required/></td></tr>
+            <tr>
+                <td><label>Telephone/ Mobile Number</label></td>
+            <td>
+                <input type="text" name="mobile" placeholder="Enter the Mobile Number" pattern="^[7-9]{1}[0-9]{9}$" required/>
+                </td>
+                </tr>
+            <tr>
+                <td><label>Connection Type</label></td>
+            <td>
+                <select name="conntype" id="connectiontype" required>
+                <option value="Pre">Pre</option>
+                <option value="Post">Post</option>
+            </select>
+                
+            </td>
+            </tr>
+            <tr>
+                <td><label>Scheme Name</label></td>
+            <td>
+                <input type="radio" name="scheme" id="scheme1" value="Local" required>Local
+                <input type="radio" name="scheme" id="scheme2" value="STD" requrired>STD
+                <input type="radio" name="scheme" id="scheme3" value="FullTalkTime" required>FullTalkTime
+            </td></tr>
+            <tr>
+                <td><label>Connection Duration</label></td>
+            <td>
+                <input type="number" min="1" max="12" name="duration" id="duration" required>
+            </td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit" id="submit" value="Connection Bill Amount" onclick="return BillAmount();" >
+            </td>
+            <td><input type="reset" value="Reset" name="clear" id="clear">
+            </td>
+            </tr>
+        </table>
+        <div id="result"></div>
+        
+        <table border="1" id="rentalcost">
+             <caption>Rental Cost Table</caption>
+           <tr><th>Connection</th>
+           <th>Call Limit</th>
+           <th>Monthly Rental</th></tr>
+        <tr><td>Pre</td>
+        <td>500</td>
+        <td>75</td></tr>
+        <tr><td>Post</td>
+        <td>Unlimited</td>
+        <td>150</td></tr>
+        </table>
+      </form>
+    </body>
+</html>
