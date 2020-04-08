@@ -1,0 +1,12 @@
+1.select concat(address,",",city) AS Address from student order by Address desc; 
+
+2.select distinct h.hotel_id,h.hotel_name,h.rating from hotel_details h join orders o on h.hotel_id=o.hotel_id where monthname(o.order_date)='July' order by h.hotel_id asc; 
+
+3.select rental_id,car_id,customer_id,km_driven from rentals where monthname(return_date)='August' and year(return_date)=2019 order by rental_id;
+
+
+8.select hotel_id,hotel_name,hotel_type from hotel_details where hotel_id not in(select hotel_id from orders where monthname(order_date)='MAY'and year(order_date)=2019) 
+order by hotel_id;
+
+
+9.select h.hotel_id,h.hotel_name,count(o.order_id) from hotel_details h join orders o on h.hotel_id=o.hotel_id group by(o.hotel_id) having count(o.hotel_id)>5 order by h.hotel_id;
